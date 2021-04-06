@@ -1,0 +1,12 @@
+---
+swagger: "2.0"
+info:
+  description: E222 Lab 5
+  version: "0.0"
+  title: E222
+host: virtserver.swaggerhub.com
+basePath: /Kaufdrop/educationAPI/0.0
+schemes:
+- https
+paths: {}
+definitions: {}
