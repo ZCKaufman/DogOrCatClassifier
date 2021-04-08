@@ -27,8 +27,8 @@ RUN pip install psutil
 
 #RUN git clone https://github.com/tbalson/cpu_test.git
 
-WORKDIR application/
-COPY . /application/
+WORKDIR catdog_pred/
+COPY . /catdog_pred/
 
 #RUN git pull
 
@@ -37,3 +37,4 @@ EXPOSE 8080
 RUN pip install -r requirements.txt
 
 #CMD ["make", "start"]
+CMD ["bash"]
