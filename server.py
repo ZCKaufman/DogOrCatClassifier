@@ -5,15 +5,15 @@ from joblib import load
 from keras.models import load_model
 # Load Model
 
-model = model = load_model("DogCatCNN3-19.tf")
+model = load_model("DogCatCNN3-19.tf")
 
 # Create the application instance
 
 app = connexion.App(__name__, specification_dir="./")
 # Read the yaml file to configure the endpoints
 
-#app.add_api("DogOrCat2.yaml")
-app.add_api("master.yaml")
+app.add_api("DogOrCat.yaml")
+#app.add_api("master.yaml")
 # create a URL route in our application for "/"
 @app.route("/")
 def home():

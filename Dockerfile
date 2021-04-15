@@ -27,8 +27,8 @@ RUN pip install psutil
 
 #RUN git clone https://github.com/tbalson/cpu_test.git
 
-WORKDIR catdog_pred/
-COPY . /catdog_pred/
+WORKDIR application/
+COPY . /application/
 
 #RUN git pull
 

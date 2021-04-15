@@ -1,4 +1,7 @@
-tensorflow
-keras
-numpy
-connexion
+connexion[swagger-ui]
+TensorFlow
+Keras
+Numpy
+Flask
+joblib
+pillow
