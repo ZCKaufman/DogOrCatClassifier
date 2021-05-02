@@ -13,11 +13,3 @@ def upload(filename):
 def download(filename):
     path = os.path.join(UPLOAD_FOLDER, filename)
     return send_file(path, as_attachment=True)
-
-def list_files():
-    files = []
-    for filename in os.listdir(UPLOAD_FOLDER):
-        path = os.path.join(UPLOAD_FOLDER, filename)
-        if os.path.isfile(path):
-            files.append(filename)
-    return jsonify(files)

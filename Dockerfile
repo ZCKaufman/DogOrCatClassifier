@@ -25,16 +25,11 @@ RUN python get-pip.py
 RUN pip install -U pip setuptools
 RUN pip install psutil
 
-#RUN git clone https://github.com/tbalson/cpu_test.git
-
 WORKDIR application/
 COPY . /application/
-
-#RUN git pull
 
 EXPOSE 8080
 
 RUN pip install -r requirements.txt
 
-#CMD ["make", "start"]
 CMD ["bash"]
